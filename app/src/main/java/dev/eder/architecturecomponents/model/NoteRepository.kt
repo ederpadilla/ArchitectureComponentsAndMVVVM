@@ -1,7 +1,7 @@
 package dev.eder.architecturecomponents.model
 
 import android.app.Application
-import android.arch.lifecycle.LiveData
+import androidx.lifecycle.LiveData
 import android.os.AsyncTask
 
 class NoteRepository(application: Application) {

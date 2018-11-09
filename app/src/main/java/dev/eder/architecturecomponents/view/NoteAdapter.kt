@@ -1,14 +1,14 @@
 package dev.eder.architecturecomponents.view
 
-import android.support.v7.recyclerview.extensions.ListAdapter
+import androidx.recyclerview.widget.ListAdapter
 import android.widget.TextView
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import dev.eder.architecturecomponents.R
 import dev.eder.architecturecomponents.model.Note
-import android.support.v7.util.DiffUtil
+import androidx.recyclerview.widget.DiffUtil
 
 
 
@@ -33,7 +33,7 @@ class NoteAdapter : ListAdapter<Note, NoteAdapter.NoteHolder>(DIFF_CALLBACK) {
         return getItem(position)
     }
 
-    inner class NoteHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class NoteHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
         val textViewTitle: TextView
         val textViewDescription: TextView
         val textViewPriority: TextView
@@ -45,7 +45,7 @@ class NoteAdapter : ListAdapter<Note, NoteAdapter.NoteHolder>(DIFF_CALLBACK) {
 
             itemView.setOnClickListener {
                 val position = adapterPosition
-                if (listener != null && position != RecyclerView.NO_POSITION) {
+                if (listener != null && position != androidx.recyclerview.widget.RecyclerView.NO_POSITION) {
                     listener!!.onItemClick(getItem(position))
                 }
             }

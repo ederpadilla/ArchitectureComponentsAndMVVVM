@@ -1,8 +1,8 @@
 package dev.eder.architecturecomponents.viewmodel
 
 import android.app.Application
-import android.arch.lifecycle.AndroidViewModel
-import android.arch.lifecycle.LiveData
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import dev.eder.architecturecomponents.model.Note
 import dev.eder.architecturecomponents.model.NoteRepository
 

@@ -1,10 +1,10 @@
 package dev.eder.architecturecomponents.model
 
-import android.arch.lifecycle.LiveData
-import android.arch.persistence.room.*
-import android.arch.persistence.room.Delete
-import android.arch.persistence.room.Update
-import android.arch.persistence.room.Dao
+import androidx.lifecycle.LiveData
+import androidx.room.*
+import androidx.room.Delete
+import androidx.room.Update
+import androidx.room.Dao
 
 
 @Dao
