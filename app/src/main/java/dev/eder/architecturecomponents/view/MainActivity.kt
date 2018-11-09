@@ -17,9 +17,6 @@ import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.helper.ItemTouchHelper
 import android.view.Menu
 import android.view.MenuItem
-import android.provider.SyncStateContract.Helpers.update
-import android.R.attr.data
-import android.nfc.NfcAdapter.EXTRA_ID
 
 
 
@@ -72,7 +69,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     val observer = Observer<List<Note>> {
-        notes -> adapter.setNotes(notes!!)
+        notes -> adapter.submitList(notes!!)
     }
 
     fun addNote(view : View){
